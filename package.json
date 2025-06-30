@@ -1,0 +1,30 @@
+{
+  "name": "travel-mcp-server",
+  "version": "1.0.0",
+   "description": "MCP server for travel planning",
+  "main": "dist/index.js",
+  "bin": {
+    "travel-mcp-server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "watch": "nodemon --exec ts-node src/index.ts"
+  },
+  "keywords": ["mcp", "travel", "planning"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.13.2",
+    "axios": "^1.10.0",
+    "dotenv": "^17.0.0",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.7",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
